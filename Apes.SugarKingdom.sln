@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apes.SugarKingdom.Api", "Apes.SugarKingdom.Api\Apes.SugarKingdom.Api.csproj", "{200120E3-FD8C-49F4-A77B-E08E35715D2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apes.SugarKingdom.Api", "Apes.SugarKingdom.Api\Apes.SugarKingdom.Api.csproj", "{200120E3-FD8C-49F4-A77B-E08E35715D2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apes.SugarKingdom.Domain", "Apes.SugarKingdom.Domain\Apes.SugarKingdom.Domain.csproj", "{AFB7E808-D959-40C7-B62A-39EB421A40BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apes.SugarKingdom.Data", "Apes.SugarKingdom.Data\Apes.SugarKingdom.Data.csproj", "{C77FD1B6-F85F-4F0E-88C2-1DBC78B73A06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apes.SugarKingdom.Data", "Apes.SugarKingdom.Data\Apes.SugarKingdom.Data.csproj", "{C77FD1B6-F85F-4F0E-88C2-1DBC78B73A06}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apes.SugarKingdom.Application", "Apes.SugarKingdom.Application\Apes.SugarKingdom.Application.csproj", "{C89D2DB5-F5F3-4624-8074-02C59BD355E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apes.SugarKingdom.Application", "Apes.SugarKingdom.Application\Apes.SugarKingdom.Application.csproj", "{C89D2DB5-F5F3-4624-8074-02C59BD355E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +19,6 @@ Global
 		{200120E3-FD8C-49F4-A77B-E08E35715D2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{200120E3-FD8C-49F4-A77B-E08E35715D2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{200120E3-FD8C-49F4-A77B-E08E35715D2B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AFB7E808-D959-40C7-B62A-39EB421A40BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AFB7E808-D959-40C7-B62A-39EB421A40BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AFB7E808-D959-40C7-B62A-39EB421A40BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AFB7E808-D959-40C7-B62A-39EB421A40BF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C77FD1B6-F85F-4F0E-88C2-1DBC78B73A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C77FD1B6-F85F-4F0E-88C2-1DBC78B73A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C77FD1B6-F85F-4F0E-88C2-1DBC78B73A06}.Release|Any CPU.ActiveCfg = Release|Any CPU

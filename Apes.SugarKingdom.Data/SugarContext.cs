@@ -1,6 +1,10 @@
-﻿namespace Apes.SugarKingdom.Data;
+﻿using Microsoft.EntityFrameworkCore;
 
-public class SugarContext
+namespace Apes.SugarKingdom.Data;
+
+public class SugarContext(DbContextOptions options) : DbContext(options), ISugarContext
 {
+    public DbSet<VersusPoints> VersusPoints { get; set; } = default!;
+
 
 }

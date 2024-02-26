@@ -1,6 +1,6 @@
 @Apes.SugarKingdom.Api_HostAddress = http://localhost:5221
 
-GET {{Apes.SugarKingdom.Api_HostAddress}}/weatherforecast/
+GET {{Apes.SugarKingdom.Api_HostAddress}}/api/versus/asd
 Accept: application/json
 
 ###
