@@ -10,11 +10,9 @@ public abstract class BaseEntity
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public Guid Id { get; set; }
 
-    [Column("ModifiedDate", TypeName = "timestamp")]
-    [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+    [Column("ModifiedDate")]
     public DateTime ModifiedDate { get; set; }
 
-    [Column("CreatedDate", TypeName = "timestamp")]
-    [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+    [Column("CreatedDate")]
     public DateTime CreatedDate { get; set; }
 }
