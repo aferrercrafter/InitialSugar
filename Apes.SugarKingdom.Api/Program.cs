@@ -38,7 +38,7 @@ builder.Services.AddHealthChecks();
 
 var app = builder.Build();
 
-_ = app.MigrateDatabase();
+app.MigrateDatabase();
 
 // Configure the HTTP request pipeline.
 //if (app.Environment.IsDevelopment())
