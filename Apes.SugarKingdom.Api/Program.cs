@@ -2,7 +2,6 @@ using Apes.SugarKingdom.Application;
 using Apes.SugarKingdom.Application.Profiles;
 using Apes.SugarKingdom.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 var corsOrigins = "corsOrigins";
 
@@ -19,7 +18,7 @@ builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
     options.AddPolicy(name: corsOrigins,
         policy =>
         {
-            policy.WithOrigins("http://localhost:3000", "https://localhost:3000");
+            policy.WithOrigins("http://localhost:3000", "https://localhost:3000", "https://game.sugarkingdom.io", "https://sugar-kingdom-odyssey.vercel.app");
             policy.AllowAnyMethod();
             policy.AllowAnyHeader();
         });
