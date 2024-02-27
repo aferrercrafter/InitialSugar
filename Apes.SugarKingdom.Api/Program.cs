@@ -2,6 +2,7 @@ using Apes.SugarKingdom.Application;
 using Apes.SugarKingdom.Application.Profiles;
 using Apes.SugarKingdom.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 var corsOrigins = "corsOrigins";
 
@@ -27,10 +28,7 @@ builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
 // Add services to the container.
 builder.Services.AddScoped<IVersusService, VersusService>();
 
-builder.Services.AddDbContext<ISugarContext, SugarContext>(options =>
-{
-    options.UseMySql(configuration.GetConnectionString("DefaultConnection"), new MySqlServerVersion("8.0.35"), sqlOptions => sqlOptions.EnableRetryOnFailure());
-}, ServiceLifetime.Scoped);
+builder.Services.AddDbContext<ISugarContext, SugarContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

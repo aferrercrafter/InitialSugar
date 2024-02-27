@@ -8,6 +8,6 @@ public class VersusPoints : BaseEntity
     [Column("Wallet", TypeName = "varchar(100)")]
     public string Wallet { get; set; } = default!;
     
-    [Column("Points", TypeName = "int(11)")]
+    [Column("Points")]
     public int Points { get; set; }
 }
